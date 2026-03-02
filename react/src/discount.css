@@ -1,0 +1,282 @@
+.discount-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+.discount-header {
+    text-align: center;
+    margin-bottom: 50px;
+    border: var(--border-thick);
+    background-color: var(--white);
+    padding: 30px;
+    box-shadow: var(--shadow-hard);
+    transform: rotate(-1deg);
+    position: relative;
+}
+
+.discount-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--black);
+    text-shadow: 3px 3px 0px #ccc;
+    text-transform: uppercase;
+}
+
+.highlight-text {
+    color: var(--white);
+    background-color: var(--flag-red);
+    padding: 0 15px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0px black;
+    display: inline-block;
+    transform: rotate(2deg);
+}
+
+.discount-subtitle {
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--sunflower-gold);
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid black;
+}
+
+.discount-loading {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-loading h1 {
+    background-color: var(--sunflower-gold);
+    padding: 20px 40px;
+    border: var(--border-thick);
+    box-shadow: var(--shadow-hard);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.discount-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.discount-card {
+    background-color: var(--white);
+    border: var(--border-thick);
+    box-shadow: var(--shadow-hard);
+    position: relative;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.discount-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px black;
+}
+
+.discount-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--vivid-tangerine);
+    color: black;
+    font-weight: 900;
+    font-size: 1.8rem;
+    padding: 15px 20px;
+    border: var(--border-thick);
+    box-shadow: 4px 4px 0px black;
+    transform: rotate(10deg);
+    z-index: 10;
+}
+
+.card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: radial-gradient(#000 1px, transparent 1px);
+    background-size: 10px 10px;
+    background-color: #fff;
+}
+
+.event-name {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    color: var(--deep-space-blue);
+    background-color: var(--white);
+    border: 3px solid black;
+    padding: 10px;
+    box-shadow: 4px 4px 0px black;
+}
+
+.event-time {
+    background-color: var(--vanilla-custard);
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn-view-event {
+    margin-top: auto;
+    width: 100%;
+    background-color: var(--deep-space-blue);
+    color: var(--white);
+    border: var(--border-thick);
+    padding: 15px;
+    font-size: 1.2rem;
+    transition: all 0.1s;
+}
+
+.btn-view-event:hover {
+    background-color: var(--flag-red);
+    color: var(--white);
+    box-shadow: var(--shadow-hard);
+    transform: translate(-2px, -2px);
+}
+
+.discount-empty {
+    text-align: center;
+    padding: 50px;
+    border: var(--border-thick);
+    background-color: var(--white);
+    box-shadow: var(--shadow-hard);
+}
+
+/* New Styles for Sale Games */
+.section-title {
+    font-size: 2.5rem;
+    margin: 60px 0 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-left: 10px solid var(--black);
+    padding-left: 20px;
+}
+
+.highlight-text-blue {
+    color: var(--white);
+    background-color: var(--deep-space-blue);
+    padding: 0 15px;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0px black;
+    display: inline-block;
+    transform: rotate(-1deg);
+}
+
+.sale-games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.game-sale-card {
+    background-color: var(--white);
+    border: var(--border-thick);
+    box-shadow: var(--shadow-hard);
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-sale-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 15px 15px 0px black;
+}
+
+.game-image-container {
+    position: relative;
+    height: 180px;
+    border-bottom: var(--border-thick);
+    overflow: hidden;
+}
+
+.game-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game-sale-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: var(--flag-red);
+    color: white;
+    font-weight: 900;
+    padding: 5px 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+    font-size: 1.2rem;
+}
+
+.game-sale-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game-name {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--black);
+    margin: 0;
+    line-height: 1.2;
+    height: 3.4rem;
+    /* For 2 lines */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+}
+
+.game-categories {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.cat-tag {
+    background-color: var(--vanilla-custard);
+    border: 1px solid black;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.game-price-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.discounted-price {
+    color: var(--flag-red);
+    font-size: 1.3rem;
+    font-weight: 900;
+}
